@@ -1,0 +1,51 @@
+pre.code.lang-html,
+pre.code.lang-css,
+pre.code.lang-javascript,
+pre.code.lang-markdown,
+pre.code.lang-hatena {
+  background: #f2f1e8;
+  color: #07a;
+  /* font-family: Raleway, sans-serif; */
+  font-family: inherit;
+  border: solid 2px #2e3034;
+  -webkit-hyphens: none;
+  -moz-tab-size: 4; /* 修正 */
+  text-shadow: 0 1px var(--hcb-color--text-shadow, #fff);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+pre.code.lang-html .synIdentifier,
+pre.code.lang-css .synIdentifier,
+pre.code.lang-javascript .synIdentifier,
+pre.code.lang-markdown .synIdentifier,
+pre.code.lang-hatena .synIdentifier {
+  color: #b34380;
+}
+
+pre.code.lang-html .synConstant,
+pre.code.lang-css .synConstant,
+pre.code.lang-javascript .synConstant,
+pre.code.lang-markdown .synConstant,
+pre.code.lang-hatena .synConstant {
+  color: #0176aa;
+}
+
+pre.code.lang-html .synVariable,
+pre.code.lang-css .synVariable,
+pre.code.lang-javascript .synVariable,
+pre.code.lang-markdown .synVariable,
+pre.code.lang-hatena .synVariable {
+  color: #417b1e;
+}
+
+pre.code.lang-html .synComment,
+pre.code.lang-css .synComment,
+pre.code.lang-javascript .synComment,
+pre.code.lang-markdown .synComment,
+pre.code.lang-hatena .synComment {
+  color: #96a3ae;
+}
