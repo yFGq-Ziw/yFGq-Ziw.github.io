@@ -1,0 +1,23 @@
+name: Update CSS
+
+on:
+  gist:
+    types:
+      - updated
+
+jobs:
+  update-css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Update CSS
+        run: |
+          # ここに実際のコマンドを書く
+          # 例: cp path/to/source.css path/to/destination.css
+          echo "Updated CSS file"
+        env:
+          GIST_ID: ${{ github.event.inputs.gist_id }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
